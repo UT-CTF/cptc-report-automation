@@ -1,0 +1,9 @@
+archive/
+*.aux
+*.log
+*.gz
+*.pdf
+images/*.*
+vuln_data/*.*
+/vulns.json
+/cptc-py-report.pdf
