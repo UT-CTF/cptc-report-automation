@@ -165,9 +165,9 @@ if __name__ == "__main__":
     vulns = sorted(
         vulns,
         key=lambda x: (
-            x["severity"]["overall"],
-            x["severity"]["impact"],
-            x["severity"]["likelihood"],
+            SEVERITY_RANKING[x["severity"]["overall"]],
+            SEVERITY_RANKING[x["severity"]["impact"]],
+            SEVERITY_RANKING[x["severity"]["likelihood"]],
             x["title"],
         ),
     )
